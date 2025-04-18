@@ -22,3 +22,27 @@ An Application Protocol-Based Intrusion Detection System (APIDS) is a type of ID
 
 ### Hybrid Intrusion Detection System
 A hybrid Intrusion Detection System is a type of IDS in which two or more violation detection approaches are used together.
+
+## Functions of IDS
+Detecting security breaches according to the detection methods used by the IDS product is the main task of the IDS product.
+When IDS detects a security breach, the administrator is informed, and/or this information is sent to the SIEM product.
+
+## Importance of IDS for Security
+IDS is a product developed to detect malicious behavior. It can be said that security is lacking in a network without IDS. Because IDS is one of the products that has reached a certain technological maturity. Due to its task, it is very important to detect security breaches. It is recommended to be used with other security products rather than alone. Since the IDS product does not have the ability to take action, it will be more effective to use it with a security product that has the ability to take additional action.
+
+Some popular IDS products used in the cybersecurity industry are as follows:
+
+- Zeek/Bro
+- Snort
+- Suricata
+- Fail2Ban
+- OSSEC
+
+## What log sources does the IDS have?
+During its operation, IDS detects security violations according to previously established rules. Therefore, it is very important how much the written rule defines the attack. If the written rule cannot detect the attack or detects the normal behavior as an anomaly, the rule should be changed or the incoming alerts should be reviewed by the analyst. Among the IDS logs examined by the analyst, there is information in the network packets regarding the security breach.
+
+## Physical Location of the IDS Device
+The location of the IDS device in the network may vary depending on which type of IDS it is. For example, a NIDS-type device must pass all packets coming into the network over it. Therefore, it is more suitable to be positioned close to the network devices that provide access to the external network. A HIDS-type device, on the other hand, should be positioned close to the host in the network because it only examines the network packets coming to and leaving a certain host.
+
+![image](https://github.com/user-attachments/assets/b331cf16-049d-44d9-96db-969065f57c20)
+
